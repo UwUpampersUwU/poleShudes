@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		 Он герой одноимённых компьютерных игр и мультсериала, самый известный покемон – появился в 1996 году.
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>П</h1>
+		</div>
+		<div class="letter2">
+			<h1>И</h1>
+		</div>
+		<div class="letter3">
+			<h1>К</h1>
+		</div>
+		<div class="letter4">
+			<h1>А</h1>
+		</div>
+		<div class="letter5">
+			<h1>Ч</h1>
+		</div>
+		<div class="letter6">
+			<h1>У</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="text1">A</span>
+	<span class="net1">Б</span>
+	<span class="net2">В</span>
+	<span class="net3">Г</span>
+	<span class="net4">Д</span>		
+	<span class="net5">Е</span>	
+	<span class="net6">Ё</span>
+	<span class="net7">Ж</span>
+	<span class="net8">З</span>
+	<span class="text3">И</span>
+	<span class="net9">Й</span>
+	<span class="text5">К</span>
+	<span class="net10">Л</span>
+	<span class="net11">М</span>
+	<span>Н</span>
+	<span>О</span>
+	<span class="text2">П</span>
+	<span>Р</span>
+	<span>С</span>
+	<span>Т</span>
+	<span class="text6">У</span>
+	<span>Ф</span>
+	<span>Х</span>
+	<span>Ц</span>
+	<span class="text4">Ч</span>
+	<span>Ш</span>
+	<span>Щ</span>
+	<span>Ъ</span>
+	<span>Ы</span>
+	<span>Ь</span>
+	<span>Э</span>
+	<span>Ю</span>
+	<span>Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+		<p style="border: 1px solid red;">Угадывай и нажимай на буквы!</p>
+	</div>
+	<script type="text/javascript">
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. */
+		let bukva1 = document.querySelector(".letter1")
+		let bukva2 = document.querySelector(".letter2")
+		let bukva3 = document.querySelector(".letter3")
+		let bukva4 = document.querySelector(".letter4")
+		let bukva5 = document.querySelector(".letter5")
+		let bukva6 = document.querySelector(".letter6")
+		document.querySelector(".text1").onclick = function(){
+			bukva4.style.background = "yellow"
+		}
+		document.querySelector(".text2").onclick = function(){
+			bukva1.style.background = "yellow"
+		}
+		document.querySelector(".text3").onclick = function(){
+			bukva2.style.background = "yellow"
+		}
+		document.querySelector(".text4").onclick = function(){
+			bukva5.style.background = "yellow"
+		}
+		document.querySelector(".text5").onclick = function(){
+			bukva3.style.background = "yellow"
+		}
+		document.querySelector(".text6").onclick = function(){
+			bukva6.style.background = "yellow"
+		}
+	</script>
+</body>
+</html>
